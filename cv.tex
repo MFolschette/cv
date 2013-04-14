@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{comment}
+
+%\definecolor{darkgray}{rgb}{0.3,0.3,0.3}
+\colorlet{darkgray}{color2}
+\colorlet{color3}{gray}
+
+\renewcommand{\emph}{\textbf}
+\newcommand{\myrule}{\vspace*{-2pt}\textcolor{color3}{\rule{\textwidth}{.5pt}}\vspace*{1pt}}
+\newcommand{\ii}{\item[]}
+
+\newcommand{\lab}[2]{\textit{#1:} #2}
+\newcommand{\litem}[2]{\item \lab{#1}{#2}}
+\newcommand{\litemn}[2]{\ii \lab{#1}{#2}}
+\newcommand{\labb}[2]{\emph{#1:} #2}
+
+\newcommand{\place}[1]{\textit{\textcolor{darkgray}{#1}}}
+\newcommand{\cvplace}[4]{\cvitem{#1}{#2%
+\ifthenelse{\equal{#3}{}}%
+{\hfill\place{#4}}%
+{\newline{}\phantom{i}\hfill\place{#4}}%
+}}
+
+\newlength{\listitemsymbolwidthsep}
+\settowidth{\listitemsymbolwidthsep}{\listitemsymbol~~}
+\newenvironment{publist}%
+{\begin{tabular}{r@{}p{.935\textwidth}}\hspace{-\listitemsymbolwidthsep}\hspace{.45\hintscolumnwidth}}%
+{\end{tabular}}
+\newcommand{\newpub}[1]{\vspace{1pt}\begin{publist}\listitemsymbol~~&#1\end{publist}\vspace{1pt}}
+%\newcommand{\newpub}{\listitemsymbol~~&}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Maxime} % Your first name
+\familyname{Folschette} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{2\textsuperscript{nd} Year PhD Student in Bioinformatics}
+
+\address{Current position: IRCCyN (Nantes, France)}{}
+%Institut de Recherche en Communication et Cybernétique de Nantes
+%1, rue de la Noë --- B.P. 92101\\
+%44321 Nantes Cedex 3 --- France}
+%{Office: S~507}
+
+%\mobile{+33~(0)6~27~72~07~42}
+\phone{+33~(0)2~40~37~69~70}
+%\fax{(000) 111 1113}
+\email{Maxime.Folschette@irccyn.ec-nantes.fr}
+\homepage{www.irccyn.ec-nantes.fr/~folschet}{www.irccyn.ec-nantes.fr/$\sim$folschet}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+
+\vspace{-1.2cm}
+
+\section{EDUCATION}
+
+\cvplace{Since Oct. 2011}
+{\emph{PhD student in bioinformatics}, MENRT (ministry grant)
+\begin{itemize}
+  \litem{Team}{\emph{MeForBio} (Formal Methods for Bioinformatics)}
+  \litem{Subject}{\emph{Algebraic modeling of multi-scale evolution and dynamics \ii of biological regulatory networks}}
+  \litem{Keywords}{Formal Methods, Biological Regulatory Networks, Parameters Inference}
+\end{itemize}}
+{}{\httplink[École Centrale de Nantes (Nantes, France)]{www.ec-nantes.fr}
+ --- Laboratory: \httplink[IRCCyN]{www.irccyn.ec-nantes.fr}
+ --- Team: \httplink[MeForBio]{www.irccyn.ec-nantes.fr/spip.php?rubrique97&lang=en}}
+
+\myrule
+
+\cvplace{2011\\2008--2011\\~\\\smallskip 2010--2011}
+{Double diploma at the \emph{École Centrale de Nantes} engineering school:
+%\cvplace{2008--2011}{
+\begin{itemize}
+  \item \emph{Engineering diploma}
+  \litemn{Options}{\emph{Computer Science} and \emph{Research \& Development}}
+\end{itemize}
+%\cvplace{2010--2011}{
+\begin{itemize}
+  \item \emph{Master thesis} in Automatics, Production Systems and Real Time
+  \litemn{Subject}{\emph{Applying the Hoare logic to gene regulatory networks}}
+\end{itemize}}
+{}{\httplink[École Centrale de Nantes (Nantes, France)]{www.ec-nantes.fr}}
+
+\myrule
+
+\cvplace{2006--2008\\June 2006}
+{\emph{Classes Préparatoires aux Grandes Écoles} (MPSI/MP), intensive courses in maths and sciences\newline{}
+\emph{Baccalauréat S}, equiv. A levels}
+%\cvplace{June 2006}
+%{\emph{Baccalauréat S}, equiv. A levels}
+{}{\httplink[Lycée Jacques Amyot (Melun, France)]{www.lyceejamyot-melun.fr/wakka.php?wiki=AccueilJamyot}}
+
+
+
+\section{PUBLICATIONS}
+
+\newpub{\emph{M. Folschette}, L. Paulevé, K. Inoue, M. Magnin and O. Roux:\newline{}
+  \emph{Concretizing the process hitting into biological regulatory networks},\newline{}
+  in: \textit{Computational Methods in Systems Biology}, editors: D. Gilbert and M. Heiner,\newline{}
+  166--186, Springer Berlin Heidelberg, October 2012, DOI \httplink[10.1007/978-3-642-33636-2\_11]{dx.doi.org/10.1007/978-3-642-33636-2_11}.}
+
+\myrule
+
+\newpub{A. Murari, D. Mazon, M. Gelfusa, \emph{M. Folschette}, T. Quilichini and EFDA-JET contributors:\newline{}
+  \emph{Residual analysis of the equilibrium reconstruction quality on JET}, \textit{Nuclear Fusion},\newline{}
+  Vol. 51, No. 5, April 2011, DOI \httplink[10.1088/0029-5515/51/5/053012]{dx.doi.org/10.1088/0029-5515/51/5/053012}.}
+
+
+
+\section{WORK \& RESEARCH EXPERIENCE}
+
+\cvplace{March--May 2012}
+{\emph{PhD internship} at the \emph{National Institute of Informatics} of Tokyo, in the \emph{Inoue Laboratory}\newline{}
+\lab{Subject}{Inferring a biological regulatory network from a process hitting model using ASP}}
+{x}{\httplink[National Institute of Informatics (Tokyo, Japan)]{www.nii.ac.jp/en}
+--- Team: \httplink[Inoue Laboraoty]{research.nii.ac.jp/il}}
+
+\myrule
+
+\cvplace{April--Sept. 2011}
+{\emph{Master internship} in the \emph{MeForBio} team at the \emph{IRCCyN}\newline{}
+Application of the Master subject in Coq, OCaml and Prolog}
+{}{\httplink[IRCCyN (Nantes, France)]{www.irccyn.ec-nantes.fr}}
+
+\myrule
+
+\cvplace{May--August 2010}
+{\emph{Mid-term studies internship} in the \emph{Diagnostics} team at \emph{EFDA-JET} (nuclear fusion research)\newline{}
+\lab{Subject}{Statistical processing on magnetic coils measurements to bring out modeling flaws}}
+{x}{\httplink[EFDA-JET: Joint European Torus (Culham Science Centre, UK)]{www.efda.org}}
+
+
+
+\section{PERSONAL SKILLS}
+
+\cvitem{Computing}
+{\labb{Languages}{OCaml, ASP, Coq, C, C++, Java, Maple, Matlab, SQL, Python, Qbasic}\newline{}
+\labb{Other skills}{Latex, Linux command line}}
+
+\cvitem{Languages}
+{\labb{French}{Native speaker}\newline{}
+\labb{English}{Fairly fluent, TOEIC with 870 points in 2009}\newline{}
+\labb{German}{Basic level}}
+
+\end{document}
