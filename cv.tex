@@ -67,6 +67,16 @@
 \newcommand{\newpub}[1]{\vspace{1pt}\begin{publist}\listitemsymbol~~&#1\end{publist}\vspace{1pt}}
 %\newcommand{\newpub}{\listitemsymbol~~&}
 
+\newenvironment{cvsection}[1]{%
+  \vspace{1cm}
+  \begin{minipage}{\textwidth}
+  \section{#1}%
+}{%
+  \end{minipage}
+}
+
+\newcommand{\vol}{Vol.\ }
+\newcommand{\no}{No.\ }
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -76,7 +86,7 @@
 \familyname{Folschette} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{2\textsuperscript{nd} Year PhD Student in Bioinformatics}
+\title{3\textsuperscript{rd} Year PhD Student in Bioinformatics}
 
 \address{Current position: IRCCyN (Nantes, France)}{}
 %Institut de Recherche en Communication et Cybernétique de Nantes
@@ -88,7 +98,8 @@
 \phone{+33~(0)2~40~37~69~70}
 %\fax{(000) 111 1113}
 \email{Maxime.Folschette@irccyn.ec-nantes.fr}
-\homepage{www.irccyn.ec-nantes.fr/~folschet}{www.irccyn.ec-nantes.fr/$\sim$folschet}
+%\homepage{www.irccyn.ec-nantes.fr/~folschet}{www.irccyn.ec-nantes.fr/$\sim$folschet}
+\homepage{maxime.folschette.name}{maxime.folschette.name}
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture
 %\quote{"A witty and playful quotation" - John Smith}
 
@@ -102,9 +113,10 @@
 
 
 
-\vspace{-1.2cm}
+\vspace{-1cm}
 
-\section{EDUCATION}
+%\begin{minipage}{\textwidth}
+\begin{cvsection}{EDUCATION}
 
 \cvplace{Since Oct. 2011}
 {\emph{PhD student in bioinformatics}, MENRT (ministry grant)
@@ -142,24 +154,60 @@
 %{\emph{Baccalauréat S}, equiv. A levels}
 {}{\httplink[Lycée Jacques Amyot (Melun, France)]{www.lyceejamyot-melun.fr/wakka.php?wiki=AccueilJamyot}}
 
+\end{cvsection}
 
 
-\section{PUBLICATIONS}
 
-\newpub{\emph{M. Folschette}, L. Paulevé, K. Inoue, M. Magnin and O. Roux:\newline{}
-  \emph{Concretizing the process hitting into biological regulatory networks},\newline{}
-  in: \textit{Computational Methods in Systems Biology}, editors: D. Gilbert and M. Heiner,\newline{}
-  166--186, Springer Berlin Heidelberg, October 2012, DOI \httplink[10.1007/978-3-642-33636-2\_11]{dx.doi.org/10.1007/978-3-642-33636-2_11}.}
+\begin{cvsection}{PUBLICATIONS IN CONFERENCES AND WORKSHOPS}
+
+\newpub{\emph{M. Folschette}, L. Paulevé, M. Magnin and O. Roux: %\newline{}
+  \emph{Under-approximation of reachability in multivalued asynchronous networks}, %\newline{}
+  in: \textit{Proceedings of the fourth International Workshop on Interactions between Computer Science and Biology}, editors: E. Merelli and A. Troina, %\newline{}
+  \textit{Electronic Notes in Theoretical Computer Science}, \vol 299,
+  33--51, Springer Berlin Heidelberg, June 2013, DOI \httplink[10.1016/j.entcs.2013.11.004]{http://dx.doi.org/10.1016/j.entcs.2013.11.004}.}
 
 \myrule
 
-\newpub{A. Murari, D. Mazon, M. Gelfusa, \emph{M. Folschette}, T. Quilichini and EFDA-JET contributors:\newline{}
-  \emph{Residual analysis of the equilibrium reconstruction quality on JET}, \textit{Nuclear Fusion},\newline{}
-  Vol. 51, No. 5, April 2011, DOI \httplink[10.1088/0029-5515/51/5/053012]{dx.doi.org/10.1088/0029-5515/51/5/053012}.}
+\newpub{\emph{M. Folschette}, L. Paulevé, K. Inoue, M. Magnin and O. Roux: %\newline{}
+  \emph{Concretizing the process hitting into biological regulatory networks}, %\newline{}
+  in: \textit{Computational Methods in Systems Biology}, editors: D. Gilbert and M. Heiner, %\newline{}
+  166--186, Springer Berlin Heidelberg, October 2012, DOI \httplink[10.1007/978-3-642-33636-2\_11]{dx.doi.org/10.1007/978-3-642-33636-2_11}.
+  Acceptance rate: 37\%.}
+
+\myrule
+
+\newpub{\emph{M. Folschette}, L. Paulevé, K. Inoue, M. Magnin and O. Roux:
+  \emph{Abducing Biological Regulatory Networks from Process Hitting models},
+  in: \textit{ECML-PKDD 2012 Workshop on Learning and Discovery in Symbolic Systems Biology}, editors: O. Ray and K. Inoue, %\newline{}
+  24--35, September 2012.}
+
+%\myrule
+%
+%\newpub{A. Murari, D. Mazon, M. Gelfusa, \emph{M. Folschette}, T. Quilichini and EFDA-JET contributors: %\newline{}
+%  \emph{Residual analysis of the equilibrium reconstruction quality on JET}, \textit{Nuclear Fusion}, %\newline{}
+%  \vol 51, \no 5, April 2011, DOI \httplink[10.1088/0029-5515/51/5/053012]{dx.doi.org/10.1088/0029-5515/51/5/053012}.}
+
+\end{cvsection}
 
 
 
-\section{WORK \& RESEARCH EXPERIENCE}
+\begin{cvsection}{PUBLICATIONS IN THEMATIC SCHOOLS}
+
+\newpub{\emph{M. Folschette}:
+  \emph{Introduction to the Process Hitting and inference of its underlying Biological Regulatory Network},
+  \textit{Advances in Systems and Synthetic Biology}, student session, 43--52, March 2013.}
+
+\myrule
+
+\newpub{\emph{M. Folschette}:
+  \emph{Inferring Biological Regulatory Networks from Process Hitting models},
+  \textit{Modeling and Verifying Parallel Processes}, student session, 91--97, December 2012.}
+
+\end{cvsection}
+
+
+
+\begin{cvsection}{WORK \& RESEARCH EXPERIENCE}
 
 \cvplace{March--May 2012}
 {\emph{PhD internship} at the \emph{National Institute of Informatics} of Tokyo, in the \emph{Inoue Laboratory}\newline{}
@@ -173,25 +221,33 @@
 {\emph{Master internship} in the \emph{MeForBio} team at the \emph{IRCCyN}\newline{}
 Application of the Master subject in Coq, OCaml and Prolog}
 {}{\httplink[IRCCyN (Nantes, France)]{www.irccyn.ec-nantes.fr}}
+\nopagebreak[4]
 
+\nopagebreak[4]
 \myrule
 
+\nopagebreak[4]
 \cvplace{May--August 2010}
 {\emph{Mid-term studies internship} in the \emph{Diagnostics} team at \emph{EFDA-JET} (nuclear fusion research)\newline{}
 \lab{Subject}{Statistical processing on magnetic coils measurements to bring out modeling flaws}}
 {x}{\httplink[EFDA-JET: Joint European Torus (Culham Science Centre, UK)]{www.efda.org}}
 
+\end{cvsection}
 
 
-\section{PERSONAL SKILLS}
+
+\begin{cvsection}{PERSONAL SKILLS}
 
 \cvitem{Computing}
-{\labb{Languages}{OCaml, ASP, Coq, C, C++, Java, Maple, Matlab, SQL, Python, Qbasic}\newline{}
+{\labb{Languages}{OCaml, ASP, Coq, C, C++, Java, Maple, Matlab, SQL, Python, QBasic}\newline{}
 \labb{Other skills}{Latex, Linux command line}}
 
 \cvitem{Languages}
 {\labb{French}{Native speaker}\newline{}
 \labb{English}{Fairly fluent, TOEIC with 870 points in 2009}\newline{}
-\labb{German}{Basic level}}
+%\labb{German}{Basic level}
+}
+
+\end{cvsection}
 
 \end{document}
