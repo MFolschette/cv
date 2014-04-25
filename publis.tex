@@ -20,7 +20,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
@@ -68,7 +68,7 @@
 \newcommand{\newpub}[1]{\vspace{1pt}\begin{publist}\listitemsymbol~~&#1\end{publist}\vspace{1pt}}
 %\newcommand{\newpub}{\listitemsymbol~~&}
 
-\newcommand{\cvsectionvspace}{\vspace{.5cm}}
+\newcommand{\cvsectionvspace}{\vspace{.4cm}}
 
 \newenvironment{cvsplitsection}[1]{%
   \cvsectionvspace
@@ -111,14 +111,14 @@
 \newcommand{\no}{No.\ }
 
 %----------------------------------------------------------------------------------------
-% NAME AND CONTACT INFORMATION SECTION
+%	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
 \firstname{Maxime} % Your first name
 \familyname{Folschette} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{3\textsuperscript{rd} Year PhD Student in Bioinformatics}
+\title{Publications}
 
 \address{Position: \httplink[IRCCyN (Nantes, France)]{www.irccyn.ec-nantes.fr}}
 {Research team: \httplink[MeForBio]{www.irccyn.ec-nantes.fr/en/research-teams/meforbio}}
@@ -146,58 +146,15 @@
 
 
 
-\vspace{-1cm}
-
-%\begin{minipage}{\textwidth}
-\begin{cvsection}{EDUCATION}
-
-\cvplace{Since Oct. 2011}
-{\emph{PhD student in bioinformatics}, MENRT (ministry grant)
-\begin{itemize}
-  \litem{Team}{\emph{MeForBio} (Formal Methods for Bioinformatics)}
-  \litem{Subject}{\emph{Algebraic modeling of multi-scale evolution and dynamics \ii of biological regulatory networks}}
-  \litem{Keywords}{Formal Methods, Biological Regulatory Networks, Parameters Inference}
-\end{itemize}}
-{}{\httplink[École Centrale de Nantes (Nantes, France)]{www.ec-nantes.fr}
- --- Laboratory: \httplink[IRCCyN]{www.irccyn.ec-nantes.fr}
- --- Team: \httplink[MeForBio]{www.irccyn.ec-nantes.fr/spip.php?rubrique97&lang=en}}
-
-\myrule
-
-\cvplace{2011\\2008--2011\\~\\\smallskip 2010--2011}
-{Double diploma at the \emph{École Centrale de Nantes} engineering school:
-%\cvplace{2008--2011}{
-\begin{itemize}
-  \item \emph{Engineering diploma}
-  \litemn{Options}{\emph{Computer Science} and \emph{Research \& Development}}
-\end{itemize}
-%\cvplace{2010--2011}{
-\begin{itemize}
-  \item \emph{Master thesis} in Automatics, Production Systems and Real Time
-  \litemn{Subject}{\emph{Applying the Hoare logic to gene regulatory networks}}
-\end{itemize}}
-{}{\httplink[École Centrale de Nantes (Nantes, France)]{www.ec-nantes.fr}}
-
-\myrule
-
-\cvplace{2006--2008\\June 2006}
-{\emph{Classes Préparatoires aux Grandes Écoles} (MPSI/MP), intensive courses in maths and sciences\newline{}
-\emph{Baccalauréat S}, equiv. A levels}
-%\cvplace{June 2006}
-%{\emph{Baccalauréat S}, equiv. A levels}
-{}{\httplink[Lycée Jacques Amyot (Melun, France)]{www.lyceejamyot-melun.fr/wakka.php?wiki=AccueilJamyot}}
-
-\end{cvsection}
+\vspace{-1.3cm}
 
 
 
 %\begin{cvsection}{PEER-REVIEWED PUBLICATIONS IN CONFERENCES AND WORKSHOPS}
 \begin{cvsplitsection}{PEER-REVIEWED PUBLICATIONS}
 
-%\mybluerule
-\vspace*{4pt}
-%\begin{cvsubsection}{Conferences and workshops}
-\begin{cvsubsection}{CONFERENCES AND WORKSHOPS}
+\begin{cvsubsection}{Conferences and workshops}
+%\begin{cvsubsection}{CONFERENCES AND WORKSHOPS}
 
 \newpub{\emph{M. Folschette}, L. Paulevé, M. Magnin and O. Roux: %\newline{}
   \emph{Under-approximation of reachability in multivalued asynchronous networks}, %\newline{}
@@ -227,8 +184,8 @@
 
 %\begin{cvsection}{PEER-REVIEWED PUBLICATIONS IN THEMATIC SCHOOLS}
 
-%\begin{cvsubsectionrule}{Thematic schools}
-\begin{cvsubsectionrule}{THEMATIC SCHOOLS}
+\begin{cvsubsectionrule}{Thematic schools}
+%\begin{cvsubsectionrule}{THEMATIC SCHOOLS}
 
 \newpub{\emph{M. Folschette}:
   \emph{Introduction to the Process Hitting and inference of its underlying Biological Regulatory Network},
@@ -243,12 +200,77 @@
 \end{cvsubsectionrule}
 %\end{cvsection}
 
+\end{cvsplitsection}
 
+
+
+\begin{cvsplitsection}{SUBMITTED PUBLICATIONS}
+
+\begin{cvsubsection}{Book chapter}
+
+\newpub{L. Paulevé, C. Chancellor, \emph{M. Folschette}, M. Magnin and O. Roux:
+  \emph{Analyzing Large Network Dynamics with Process Hitting},
+  book chapter of \textit{Logical Modeling of Biological Systems},
+  editors: L. Farinas del Cerro and K. Inoue,
+  to be submitted.}
+
+\end{cvsubsection}
+
+
+
+\begin{cvsubsectionrule}{Journals and special issues}
+
+\newpub{\emph{M. Folschette}, L. Paulevé, M. Magnin and O. Roux:
+  \emph{Sufficient Conditions for Reachability in Automata Networks with Priorities},
+  extended version of “Under-approximation of reachability in multivalued asynchronous networks”,
+  selected paper for a special issue of \textit{Theoretical Computer Science} (TCS-C),
+  submitted on April 2014.}
+
+\myrule
+
+\newpub{\emph{M. Folschette}, L. Paulevé, K. Inoue, M. Magnin and O. Roux:
+  \emph{Constructing Biological Regulatory Networks from Process Hitting models},
+  extended version of “Concretizing the process hitting into biological regulatory networks”,
+  submitted to \textit{Theoretical Computer Science} on August 2013.}
+
+\myrule
+
+\newpub{L. Paulevé, \emph{M. Folschette}, M. Magnin and O. Roux:
+  \emph{Analyses statiques de la dynamique des réseaux d’automates indéterministes},
+  special issue of \textit{Technique et Science Informatiques},
+  editors: N. Fatès and S. Sené,
+  submitted on April 2014.}
+
+\end{cvsubsectionrule}
+
+\end{cvsplitsection}
+
+
+
+\begin{cvsplitsection}{OTHER PUBLICATIONS}
+
+\begin{cvsubsection}{Extended abstract}
+
+\newpub{\emph{M. Folschette}:
+  \emph{Presentation of the Process Hitting framework and inference of Biological Regulatory Networks with Thomas parameters},
+  Short paper for the JDOC students meeting, April 2013.}
+
+\end{cvsubsection}
+
+\begin{cvsubsectionrule}{Master thesis}
+
+\newpub{\emph{M. Folschette}:
+  \emph{Application de la logique de Hoare aux réseaux de régulation génétique avec multiplexes},
+  Master thesis, École Centrale de Nantes, September 2011.}
+
+\end{cvsubsectionrule}
+
+%\begin{cvsplitsection}{PREVIOUS RESEARCH AREA: NUCLEAR FUSION}
 
 %\begin{cvsection}{PEER-REVIEWED PUBLICATION IN PREVIOUS RESEARCH AREA}
 
-%\begin{cvsubsectionrule}{Previous research area: nuclear fusion}
-\begin{cvsubsectionrule}{PREVIOUS RESEARCH AREA: NUCLEAR FUSION}
+\begin{cvsubsectionrule}{Previous research area: nuclear fusion --- Peer-reviewed publication in journal}
+%\begin{cvsubsectionrule}{PREVIOUS RESEARCH AREA: NUCLEAR FUSION}
 
 \newpub{A. Murari, D. Mazon, M. Gelfusa, \emph{M. Folschette}, T. Quilichini and EFDA-JET contributors: %\newline{}
   \emph{Residual analysis of the equilibrium reconstruction quality on JET}, \textit{Nuclear Fusion}, %\newline{}
@@ -257,49 +279,11 @@
 \end{cvsubsectionrule}
 \end{cvsplitsection}
 
+%\vspace{.5cm}
+\vfill
 
+Full text of accepted and published articles are available at: \quad
+\texttt{\httplink[http://maxime.folschette.name/]{maxime.folschette.name}}
 
-\begin{cvsection}{WORK \& RESEARCH EXPERIENCE}
-
-\cvplace{March--May 2012}
-{\emph{PhD internship} at the \emph{National Institute of Informatics} of Tokyo, in the \emph{Inoue Laboratory}\newline{}
-\lab{Subject}{Inferring a biological regulatory network from a process hitting model using ASP}}
-{x}{\httplink[National Institute of Informatics (Tokyo, Japan)]{www.nii.ac.jp/en}
---- Team: \httplink[Inoue Laboraoty]{research.nii.ac.jp/il}}
-
-\myrule
-
-\cvplace{April--Sept. 2011}
-{\emph{Master internship} in the \emph{MeForBio} team at the \emph{IRCCyN}\newline{}
-Application of the Master subject in Coq, OCaml and Prolog}
-{}{\httplink[IRCCyN (Nantes, France)]{www.irccyn.ec-nantes.fr}}
-\nopagebreak[4]
-
-\nopagebreak[4]
-\myrule
-
-\nopagebreak[4]
-\cvplace{May--August 2010}
-{\emph{Mid-term studies internship} in the \emph{Diagnostics} team at \emph{EFDA-JET} (nuclear fusion research)\newline{}
-\lab{Subject}{Statistical processing on magnetic coils measurements to bring out modeling flaws}}
-{x}{\httplink[EFDA-JET: Joint European Torus (Culham Science Centre, UK)]{www.efda.org}}
-
-\end{cvsection}
-
-
-
-\begin{cvsection}{PERSONAL SKILLS}
-
-\cvitem{Computing}
-{\labb{Languages}{OCaml, ASP, Coq, C, C++, Java, Maple, Matlab, SQL, Python, QBasic}\newline{}
-\labb{Other skills}{Latex, Linux command line}}
-
-\cvitem{Languages}
-{\labb{French}{Native speaker}\newline{}
-\labb{English}{Fairly fluent, TOEIC with 870 points in 2009}\newline{}
-%\labb{German}{Basic level}
-}
-
-\end{cvsection}
 
 \end{document}
