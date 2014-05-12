@@ -1,142 +1,9 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "ModernCV" CV and Cover Letter
-% LaTeX Template
-% Version 1.1 (9/12/12)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Xavier Danaux (xdanaux@gmail.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
-% used for structuring the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Uses "ModernCV" LaTeX template (Version 1.1, 9/12/12) under CC BY-NC-SA 3.0
+% by Xavier Danaux http://www.LaTeXTemplates.com
+\documentclass[11pt,a4paper,sans]{moderncv}
+\input{preamble}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
-
-\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
-\usepackage[scale=0.85]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
-
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{comment}
-
-%\definecolor{darkgray}{rgb}{0.3,0.3,0.3}
-\colorlet{darkgray}{color2}
-\colorlet{color3}{gray}
-
-\renewcommand{\emph}{\textbf}
-\newcommand{\myrule}{\vspace*{-2pt}\textcolor{color3}{\rule{\textwidth}{.5pt}}\vspace*{1pt}}
-\newcommand{\mybluerule}{\vspace*{5pt}\textcolor{color1}{\rule{\textwidth}{.5pt}}\vspace*{-2pt}}
-\newcommand{\ii}{\item[]}
-
-\newcommand{\lab}[2]{\textit{#1:} #2}
-\newcommand{\litem}[2]{\item \lab{#1}{#2}}
-\newcommand{\litemn}[2]{\ii \lab{#1}{#2}}
-\newcommand{\labb}[2]{\emph{#1:} #2}
-
-\newcommand{\place}[1]{\textit{\textcolor{darkgray}{#1}}}
-\newcommand{\cvplace}[4]{\cvitem{#1}{#2%
-\ifthenelse{\equal{#3}{}}%
-{\hfill\place{#4}}%
-{\newline{}\phantom{i}\hfill\place{#4}}%
-}}
-
-\newlength{\listitemsymbolwidthsep}
-\settowidth{\listitemsymbolwidthsep}{\listitemsymbol~~}
-\newenvironment{publist}%
-{\begin{tabular}{r@{}p{.935\textwidth}}\hspace{-\listitemsymbolwidthsep}\hspace{.45\hintscolumnwidth}}%
-{\end{tabular}}
-\newcommand{\newpub}[1]{\vspace{1pt}\begin{publist}\listitemsymbol~~&#1\end{publist}\vspace{1pt}}
-%\newcommand{\newpub}{\listitemsymbol~~&}
-
-\newcommand{\cvsectionvspace}{\vspace{.4cm}}
-
-\newenvironment{cvsplitsection}[1]{%
-  \cvsectionvspace
-  \section{#1}%
-}{}
-
-\newenvironment{cvsection}[1]{%
-  \cvsectionvspace
-  \begin{minipage}{\textwidth}
-  \section{#1}%
-}{%
-  \end{minipage}
-}
-
-\newenvironment{cvsubsection}[1]{%
-  \vspace*{4pt}
-  \begin{minipage}{\textwidth}
-  \subsection{#1}%
-}{%
-  \end{minipage}
-}
-
-\newenvironment{cvsubsectionrule}[1]{%
-  \begin{minipage}{\textwidth}
-  \mybluerule
-  \subsection{#1}%
-}{%
-  \end{minipage}
-}
-
-%\newenvironment{cvsection}[1]{%
-%  \vspace{1cm}
-%  \begin{minipage}{\textwidth}
-%  \section{#1}%
-%}{%
-%  \end{minipage}
-%}
-
-\newcommand{\vol}{Vol.\ }
-\newcommand{\no}{No.\ }
-
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
-
-\firstname{Maxime} % Your first name
-\familyname{Folschette} % Your last name
-
-% All information in this block is optional, comment out any lines you don't need
-\title{Publications}
-
-\address{Position: \httplink[IRCCyN (Nantes, France)]{www.irccyn.ec-nantes.fr}}
-{Research team: \httplink[MeForBio]{www.irccyn.ec-nantes.fr/en/research-teams/meforbio}}
-%Institut de Recherche en Communication et Cybernétique de Nantes
-%1, rue de la Noë --- B.P. 92101\\
-%44321 Nantes Cedex 3 --- France}
-%{Office: S~507}
-
-%\mobile{+33~(0)6~27~72~07~42}
-\phone{+33~(0)2~40~37~69~70}
-%\fax{(000) 111 1113}
-\email{Maxime.Folschette@irccyn.ec-nantes.fr}
-%\homepage{www.irccyn.ec-nantes.fr/~folschet}{www.irccyn.ec-nantes.fr/$\sim$folschet}
-\homepage{maxime.folschette.name}{maxime.folschette.name}
-%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture
-%\quote{"A witty and playful quotation" - John Smith}
-
-%----------------------------------------------------------------------------------------
+\title{Publication list}
 
 
 
@@ -151,30 +18,31 @@
 
 
 %\begin{cvsection}{PEER-REVIEWED PUBLICATIONS IN CONFERENCES AND WORKSHOPS}
-\begin{cvsplitsection}{PEER-REVIEWED PUBLICATIONS}
+\begin{cvsplitsection}{PUBLICATIONS WITH FULL-PAPER PEER-REVIEW}
 
 \begin{cvsubsection}{Conferences and workshops}
 %\begin{cvsubsection}{CONFERENCES AND WORKSHOPS}
 
 \newpub{\emph{M. Folschette}, L. Paulevé, M. Magnin and O. Roux: %\newline{}
   \emph{Under-approximation of reachability in multivalued asynchronous networks}, %\newline{}
-  in: \textit{Proceedings of the fourth International Workshop on Interactions between Computer Science and Biology}, editors: E. Merelli and A. Troina, %\newline{}
+  in: \textit{Proceedings of the fourth International Workshop on Interactions between Computer Science and Biology}, editors: E.~Merelli and A.~Troina, %\newline{}
   \textit{Electronic Notes in Theoretical Computer Science}, \vol 299,
-  33--51, Springer Berlin Heidelberg, June 2013, DOI \httplink[10.1016/j.entcs.2013.11.004]{http://dx.doi.org/10.1016/j.entcs.2013.11.004}.}
+  33--51, Springer Berlin Heidelberg, June 2013, DOI \httplink[10.1016/j.entcs.2013.11.004]{http://dx.doi.org/10.1016/j.entcs.2013.11.004}.
+  \emphcolor{Selected for a special issue in the journal \textit{Theoretical Computer Science}.}}
 
 \myrule
 
 \newpub{\emph{M. Folschette}, L. Paulevé, K. Inoue, M. Magnin and O. Roux: %\newline{}
   \emph{Concretizing the process hitting into biological regulatory networks}, %\newline{}
-  in: \textit{Computational Methods in Systems Biology}, editors: D. Gilbert and M. Heiner, %\newline{}
+  in: \textit{Computational Methods in Systems Biology}, editors: D.~Gilbert and M.~Heiner, %\newline{}
   166--186, Springer Berlin Heidelberg, October 2012, DOI \httplink[10.1007/978-3-642-33636-2\_11]{dx.doi.org/10.1007/978-3-642-33636-2_11}.
-  Acceptance rate: 37\%.}
+  \emphcolor{Acceptance rate: 37\%.}}
 
 \myrule
 
 \newpub{\emph{M. Folschette}, L. Paulevé, K. Inoue, M. Magnin and O. Roux:
   \emph{Abducing Biological Regulatory Networks from Process Hitting models},
-  in: \textit{ECML-PKDD 2012 Workshop on Learning and Discovery in Symbolic Systems Biology}, editors: O. Ray and K. Inoue, %\newline{}
+  in: \textit{ECML-PKDD 2012 Workshop on Learning and Discovery in Symbolic Systems Biology}, editors: O.~Ray and K.~Inoue, %\newline{}
   24--35, September 2012.}
 
 \end{cvsubsection}
@@ -204,15 +72,15 @@
 
 
 
-\begin{cvsplitsection}{SUBMITTED PUBLICATIONS}
+\begin{cvsplitsection}{IN PROGRESS \& SUBMITTED PUBLICATIONS}
 
 \begin{cvsubsection}{Book chapter}
 
 \newpub{L. Paulevé, C. Chancellor, \emph{M. Folschette}, M. Magnin and O. Roux:
   \emph{Analyzing Large Network Dynamics with Process Hitting},
   book chapter of \textit{Logical Modeling of Biological Systems},
-  editors: L. Farinas del Cerro and K. Inoue,
-  to be submitted.}
+  editors: L.~Farinas del Cerro and K.~Inoue,
+  ready for submission.}
 
 \end{cvsubsection}
 
@@ -223,23 +91,23 @@
 \newpub{\emph{M. Folschette}, L. Paulevé, M. Magnin and O. Roux:
   \emph{Sufficient Conditions for Reachability in Automata Networks with Priorities},
   extended version of “Under-approximation of reachability in multivalued asynchronous networks”,
-  selected paper for a special issue of \textit{Theoretical Computer Science} (TCS-C),
-  submitted on April 2014.}
+  selected paper for a special issue of \textit{Theoretical Computer Science},
+  \emphcolor{submitted} on April 2014.}
 
 \myrule
 
 \newpub{\emph{M. Folschette}, L. Paulevé, K. Inoue, M. Magnin and O. Roux:
   \emph{Constructing Biological Regulatory Networks from Process Hitting models},
   extended version of “Concretizing the process hitting into biological regulatory networks”,
-  submitted to \textit{Theoretical Computer Science} on August 2013.}
+  \emphcolor{submitted} to \textit{Theoretical Computer Science} on August 2013.}
 
 \myrule
 
 \newpub{L. Paulevé, \emph{M. Folschette}, M. Magnin and O. Roux:
   \emph{Analyses statiques de la dynamique des réseaux d’automates indéterministes},
   special issue of \textit{Technique et Science Informatiques},
-  editors: N. Fatès and S. Sené,
-  submitted on April 2014.}
+  editors: N.~Fatès and S.~Sené,
+  \emphcolor{submitted} on April 2014.}
 
 \end{cvsubsectionrule}
 
@@ -274,7 +142,8 @@
 
 \newpub{A. Murari, D. Mazon, M. Gelfusa, \emph{M. Folschette}, T. Quilichini and EFDA-JET contributors: %\newline{}
   \emph{Residual analysis of the equilibrium reconstruction quality on JET}, \textit{Nuclear Fusion}, %\newline{}
-  \vol 51, \no 5, April 2011, DOI \httplink[10.1088/0029-5515/51/5/053012]{dx.doi.org/10.1088/0029-5515/51/5/053012}.}
+  \vol 51, \no 5, April 2011, DOI \httplink[10.1088/0029-5515/51/5/053012]{dx.doi.org/10.1088/0029-5515/51/5/053012}.
+  \emphcolor{Impact factor in 2011: 4.090.}}
 
 \end{cvsubsectionrule}
 \end{cvsplitsection}

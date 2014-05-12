@@ -23,14 +23,14 @@
 % PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+%\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\usepackage[scale=0.85]{geometry} % Reduce document margins
+\usepackage[scale=0.86]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -44,6 +44,7 @@
 \colorlet{color3}{gray}
 
 \renewcommand{\emph}{\textbf}
+\newcommand{\emphcolor}[1]{\textcolor{color1}{#1}}
 \newcommand{\myrule}{\vspace*{-2pt}\textcolor{color3}{\rule{\textwidth}{.5pt}}\vspace*{1pt}}
 \newcommand{\mybluerule}{\vspace*{5pt}\textcolor{color1}{\rule{\textwidth}{.5pt}}\vspace*{-2pt}}
 \newcommand{\ii}{\item[]}
@@ -68,7 +69,7 @@
 \newcommand{\newpub}[1]{\vspace{1pt}\begin{publist}\listitemsymbol~~&#1\end{publist}\vspace{1pt}}
 %\newcommand{\newpub}{\listitemsymbol~~&}
 
-\newcommand{\cvsectionvspace}{\vspace{1cm}}
+\newcommand{\cvsectionvspace}{\vspace{.4cm}}
 
 \newenvironment{cvsplitsection}[1]{%
   \cvsectionvspace
@@ -118,10 +119,10 @@
 \familyname{Folschette} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{3\textsuperscript{rd} Year PhD Student in Bioinformatics}
 
 \address{Position: \httplink[IRCCyN (Nantes, France)]{www.irccyn.ec-nantes.fr}}
-{Research team: \httplink[MeForBio]{www.irccyn.ec-nantes.fr/en/research-teams/meforbio}}
+{1, rue de la Noë --- 44321 Nantes --- France}
+%{Research team: \httplink[MeForBio]{www.irccyn.ec-nantes.fr/en/research-teams/meforbio}}
 %Institut de Recherche en Communication et Cybernétique de Nantes
 %1, rue de la Noë --- B.P. 92101\\
 %44321 Nantes Cedex 3 --- France}
@@ -132,106 +133,8 @@
 %\fax{(000) 111 1113}
 \email{Maxime.Folschette@irccyn.ec-nantes.fr}
 %\homepage{www.irccyn.ec-nantes.fr/~folschet}{www.irccyn.ec-nantes.fr/$\sim$folschet}
-\homepage{maxime.folschette.name}{maxime.folschette.name}
+\homepage{maxime.folschette.name}{\texttt{http://maxime.folschette.name}}
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture
 %\quote{"A witty and playful quotation" - John Smith}
 
 %----------------------------------------------------------------------------------------
-
-
-
-\begin{document}
-
-\makecvtitle % Print the CV title
-
-
-
-%\vspace{-1cm}
-
-%\begin{minipage}{\textwidth}
-\begin{cvsection}{EDUCATION}
-
-\cvplace{Since Oct. 2011}
-{\emph{PhD student in bioinformatics}, MENRT (ministry grant)
-\begin{itemize}
-  \litem{Team}{\emph{MeForBio} (Formal Methods for Bioinformatics)}
-  \litem{Subject}{\emph{Algebraic modeling of multi-scale evolution and dynamics \ii of biological regulatory networks}}
-  \litem{Keywords}{Formal Methods, Biological Regulatory Networks, Parameters Inference}
-\end{itemize}}
-{}{\httplink[École Centrale de Nantes (Nantes, France)]{www.ec-nantes.fr}
- --- Laboratory: \httplink[IRCCyN]{www.irccyn.ec-nantes.fr}
- --- Team: \httplink[MeForBio]{www.irccyn.ec-nantes.fr/spip.php?rubrique97&lang=en}}
-
-\myrule
-
-\cvplace{2011\\2008--2011\\~\\\smallskip 2010--2011}
-{Double diploma at the \emph{École Centrale de Nantes} engineering school:
-%\cvplace{2008--2011}{
-\begin{itemize}
-  \item \emph{Engineering diploma}
-  \litemn{Options}{\emph{Computer Science} and \emph{Research \& Development}}
-\end{itemize}
-%\cvplace{2010--2011}{
-\begin{itemize}
-  \item \emph{Master thesis} in Automatics, Production Systems and Real Time
-  \litemn{Subject}{\emph{Applying the Hoare logic to gene regulatory networks}}
-\end{itemize}}
-{}{\httplink[École Centrale de Nantes (Nantes, France)]{www.ec-nantes.fr}}
-
-\myrule
-
-\cvplace{2006--2008\\June 2006}
-{\emph{Classes Préparatoires aux Grandes Écoles} (MPSI/MP), intensive courses in maths and sciences\newline{}
-\emph{Baccalauréat S}, equiv. A levels}
-%\cvplace{June 2006}
-%{\emph{Baccalauréat S}, equiv. A levels}
-{}{\httplink[Lycée Jacques Amyot (Melun, France)]{www.lyceejamyot-melun.fr/wakka.php?wiki=AccueilJamyot}}
-
-\end{cvsection}
-
-
-
-\begin{cvsection}{WORK \& RESEARCH EXPERIENCE}
-
-\cvplace{March--May 2012}
-{\emph{PhD internship} at the \emph{National Institute of Informatics} of Tokyo, in the \emph{Inoue Laboratory}\newline{}
-\lab{Subject}{Inferring a biological regulatory network from a process hitting model using ASP}}
-{x}{\httplink[National Institute of Informatics (Tokyo, Japan)]{www.nii.ac.jp/en}
---- Team: \httplink[Inoue Laboraoty]{research.nii.ac.jp/il}}
-
-\myrule
-
-\cvplace{April--Sept. 2011}
-{\emph{Master internship} in the \emph{MeForBio} team at the \emph{IRCCyN}\newline{}
-Application of the Master subject in Coq, OCaml and Prolog}
-{}{\httplink[IRCCyN (Nantes, France)]{www.irccyn.ec-nantes.fr}}
-\nopagebreak[4]
-
-\nopagebreak[4]
-\myrule
-
-\nopagebreak[4]
-\cvplace{May--August 2010}
-{\emph{Mid-term studies internship} in the \emph{Diagnostics} team at \emph{EFDA-JET} (nuclear fusion research)\newline{}
-\lab{Subject}{Statistical processing on magnetic coils measurements to bring out modeling flaws}}
-{x}{\httplink[EFDA-JET: Joint European Torus (Culham Science Centre, UK)]{www.efda.org}}
-
-\end{cvsection}
-
-
-
-\begin{cvsection}{PERSONAL SKILLS}
-
-\cvitem{Computing}
-{\labb{Languages}{OCaml, ASP, Coq, C, C++, Java, Maple, Matlab, SQL, Python, QBasic}\newline{}
-\labb{Other skills}{Latex, Linux command line}}
-
-\cvitem{Languages}
-{\labb{French}{Native speaker}\newline{}
-\labb{English}{Fairly fluent, TOEIC with 870 points in 2009}\newline{}
-%\labb{German}{Basic level}
-}
-
-\end{cvsection}
-
-\end{document}
